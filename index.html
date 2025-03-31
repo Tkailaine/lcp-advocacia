@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCP- Luís Advocacia</title>
+    <link rel="stylesheet" href="estilos/styles.css" media="all">
+    <link rel="stylesheet" href="estilos/telasmuitopequenas.css" media="screen and (max-width:480px)">
+    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width:768px) and (max-width:991px)">
+    <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width:992px) and (max-width:1199px)">
+    <link rel="stylesheet" href="estilos/tv.css" media="screen and (min-width:1200px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="#home">
+        <div class="logo"><img src="imagens/logo.png" alt="José Cruz Neto Advocacia "></div>
+      </a>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#areas-atuacao">Áreas de Atuação</a></li>
+          <li style="display: none;"><a href="#escritorio">Escritório</a></li>
+          <li><a href="#cv-advogado">Sobre</a></li>
+          <li><a href="blog/blog.html">Blog</a></li>
+         
+        </ul>
+        <button class="close-btn" id="closeMenu">&times;</button>
+      </nav>
+      <a href="https://wa.link/krcvei" target="_blank"><button class="btn-whatsapp">Nos contate</button></a>
+    </div>
+  </header>
+  <main>
+
+    <div class="social-buttons">
+      <!-- Instagram Button -->
+      <a href="https://www.instagram.com/l.c.p.soc.ind.adv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-button instagram-button" aria-label="Follow us on Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+
+      <!-- WhatsApp Button -->
+      <a href="https://wa.link/krcvei" target="_blank" class="social-button whatsapp-button" aria-label="Contact us on WhatsApp">
+          <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+      </a>
+  </div>
+
+    <section class="bandeira" id="home">
+      <h1>O Direito é o Nosso Compromisso, a Sua Justiça é a Nossa Missão.</h1>
+    </section>
+
+
+    <section class="atuacao">
+        <div class="areas" >
+          <h1 class="surge-bottom">Confiança e Dedicação em Cada Detalhe do Seu Caso.</h1>
+        </div>
+
+
+        <div class="area-principal">
+          <div class="imagem-destaque">
+            <div class="ft-atuacao"></div>
+          </div> 
+        
+          <div class="txt-atuacao">
+         
+            <div class="txt-inventario">
+
+              <h1 class="surge-right">Garanta seus direitos</h1>
+              <p class="surge-left">
+                A vida é repleta de relações jurídicas: contratos, bens, família, consumo e tantas outras situações que excluem a segurança legal. O Direito Cível atua exatamente para garantir que os acordos sejam cumpridos, os conflitos sejam resolvidos de forma justa e que cada indivíduo tenha seus direitos protegidos.
+              </p>
+              <p class="surge-right">
+                Seja na defesa do seu patrimônio, na busca por indenizações, na formalização de contratos ou na solução de disputas, contar com uma assessoria jurídica faz toda a diferença. Com conhecimento e estratégia, desenvolvemos para garantir que seus interesses sejam respeitados e que você tenha a tranquilidade que merece.</p>
+
+                <p class="italic surge-left"><strong>Precisa de orientação sobre seus direitos? Consulte-nos e proteja o que é seu.</strong></p>
+            </div>
+            
+
+            <a href="https://wa.link/krcvei" target="_blank"><button type="button" class="btn-contato surge-bottom">Nos contate</button></a>
+
+            
+          </div>
+        </div>
+        <div class="outras-areas" id="areas-atuacao">
+          <h1 class="surge-bottom">ÁREAS DE ATUAÇÃO</h1>
+          <section class="areas-atuacao" >
+            
+            <div class="area-card surge-right" id="area2">
+              <h3>Direito Cível</h3>
+              <p class="mini-resumo">
+                Trata de conflitos entre particulares, como contratos, danos e obrigações.
+              </p>
+              <button class="btn-expand" onclick="toggleArea('area2')">Saber Mais</button>
+              <div class="detalhes">
+                <p>Abrange disputas privadas, como indenizações, contratos, sucessões e obrigações, buscando soluções judiciais ou extrajudiciais.</p>
+                <button class="btn-collapse" onclick="toggleArea('area2')">Exibir Menos</button>
+              </div>
+            </div>
+
+
+
+            <div class="area-card surge-bottom" id="area5">
+              <h3>Direito Criminal</h3>
+              <p class="mini-resumo">
+                Envolve crimes e penalidades, protegendo a ordem pública e punindo infratores.
+              </p>
+              <button class="btn-expand" onclick="toggleArea('area5')">Saber Mais</button>
+              <div class="detalhes">
+                <p>Trata de delitos, investigações, processos e penas, garantindo a aplicação da lei penal e a defesa dos acusados.</p>
+                <button class="btn-collapse" onclick="toggleArea('area5')">Exibir Menos</button>
+              </div>
+            </div>
+            
+            <div class="area-card surge-left" id="area1">
+              <h3>Direito do Consumidor</h3>
+              <p class="mini-resumo">
+                Protege consumidores contra abusos e assegura direitos nas relações de consumo.
+                </p>
+              <button class="btn-expand" onclick="toggleArea('area1')">Saber Mais</button>
+              <div class="detalhes">
+                <p>Resguarda direitos dos consumidores contra práticas abusivas, garantindo equilíbrio nas relações comerciais e acesso à reparação.</p>
+                <button class="btn-collapse" onclick="toggleArea('area1')">Exibir Menos</button>
+              </div>
+            </div>
+
+
+            <div class="area-card surge-right" id="area4">
+              <h3>Locações e Direito Condominal</h3>
+              <p class="mini-resumo">Regulam contratos de aluguel e normas de convivência em condomínios, incluindo direitos e deveres de locadores, locatários e condôminos.</p>
+              <button class="btn-expand" onclick="toggleArea('area4')">Saber Mais</button>
+              <div class="detalhes">
+                <p>Englobam regras para contratos de aluguel, reajustes e despejos, além da administração de condomínios, tratando de taxas, assembleias e conflitos entre moradores, locadores e inquilinos.</p>
+                <button class="btn-collapse" onclick="toggleArea('area4')">Exibir Menos</button>
+              </div>
+            </div>
+
+
+             <div class="area-card surge-bottom" id="area6">
+              <h3>Previdenciário</h3>
+              <p class="mini-resumo"> Relaciona-se a benefícios do INSS, como aposentadoria e auxílio-doença.</p>
+              <button class="btn-expand" onclick="toggleArea('area6')">Saber Mais</button>
+              <div class="detalhes">
+                <p>Foca em direitos previdenciários, como aposentadoria, pensão e benefícios assistenciais, regulados pelo INSS e outras entidades.</p>
+                <button class="btn-collapse" onclick="toggleArea('area6')">Exibir Menos</button>
+              </div>
+            </div>
+          
+            <div class="area-card surge-right" id="area3">
+              <h3>Trabalhista</h3>
+              <p class="mini-resumo"> Regula relações entre empregados e empregadores, incluindo direitos e deveres.</p>
+              <button class="btn-expand" onclick="toggleArea('area3')">Saber Mais</button>
+              <div class="detalhes">
+                <p>Disciplina direitos dos trabalhadores e deveres dos empregadores, incluindo vínculos empregatícios, rescisões e segurança no trabalho.</p>
+                <button class="btn-collapse" onclick="toggleArea('area3')">Exibir Menos</button>
+              </div>
+            </div>
+
+      
+           
+          </section>
+
+          <a href="https://wa.link/krcvei" target="_blank"><button class="btn-chamada surge-bottom">Fale com um especialista →</button></a>
+    </section>
+
+   
+
+   
+    <section class="cv-advogado" id="cv-advogado">
+      <div class="lawyer-container surge-bottom">
+        <div class="lawyer-photo">
+          <img src="imagens/advogado.jpg" alt="Foto do Advogado">
+        </div>
+        <div class="lawyer-details">
+          <h2>Dr. Luís</h2>
+          <p class="lawyer-experience">
+          
+            <ul>
+              <li><strong>Experiência Profissional:</strong> 
+              <li><strong>Formado em direito</strong> pela universidade de Mogi das Cruzes- UMC</li>
+              <li><strong>Pós graduado em direito penal e processo penal</strong> pelo Damásio</li>
+              <li><strong>Curso do tribunal do júri</strong> pela Academia Paulista de Direito Criminal- ADPCRIM</li>
+             
+            </ul>
+            
+        
+          <div class="social-icons surge-left"> 
+            
+            <a href="https://wa.link/krcvei" target="_blank"><img src="imagens/whatsapp.png" alt="WhatsApp"></a>
+            <a href="#" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com/l.c.p.soc.ind.adv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
+ 
+        </div>
+<br><br>
+          <a href="https://wa.link/krcvei" target="_blank"><button class="contact-button">Nos Contate</button></a>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+    <section class="mini-blog">
+      <div class="blog-container">
+        <h1 style="color: white; margin-bottom: 50px;">Conheça Nosso Blog</h1>
+
+        <!-- Contêiner das notícias -->
+        <div class="noticias-container">
+            <div class="noticia-item">
+                <h2 class="titulo">Indulto de Natal 2024: o que muda e quem pode ser beneficiado?</h2>
+                <p class="resumo">O indulto de Natal de 2024 estabelece critérios para a extinção e redução de penas, incluindo regras específicas para mulheres, gestantes e presos com doenças graves. A novidade deste ano inclui a possibilidade de indulto para quem cumpre pena em regime semiaberto com tornozeleira eletrônica e o cômputo do recolhimento domiciliar noturno. Crimes graves continuam sendo impeditivos, mas algumas exceções foram adicionadas. O decreto reforça a necessidade de uma análise técnica para correta aplicação das novas regras.
+                </p>
+                <p class="data">Data: 31 de Março de 2025</p>
+                <p class="fonte">Fonte: Consultor Jurídico</p>
+                <a href="blog/1.html" target="_self"><button class="btn">Saber Mais</button></a>
+            </div>
+
+            <div class="noticia-item">
+                <h2 class="titulo">STF Confirma Perdão de Pena para Condenado por Tráfico Privilegiado</h2>
+                <p class="resumo">O STF confirmou a concessão de indulto a um réu condenado por tráfico privilegiado, mantendo a decisão do TJ-SP. A corte reafirmou que essa modalidade de tráfico não é considerada crime hediondo e, portanto, não está sujeita à proibição constitucional de indultos. O julgamento teve maioria favorável, com discordância do ministro Flávio Dino.</p>
+                <p class="fonte">Fonte: Supremo Tribunal Federal</p>
+                <a href="blog/blog.html" target="_self"><button class="btn">Saber Mais</button></a>
+            </div>
+
+            <div class="noticia-item">
+                <h2 class="titulo">Indulto e Comutação de Pena 2024: Quem Tem Direito?</h2>
+                <p class="resumo">O Decreto 12.338/24 estabelece regras para a comutação de pena, beneficiando presos que cumpriram parte de sua condenação. Para crimes hediondos, é necessário ter cumprido dois terços da pena. O percentual de comutação varia entre um quinto e dois terços, dependendo do caso. O benefício não se acumula com o indulto, sendo sempre aplicada a regra mais vantajosa para o condenado.</p>
+                <p class="data">Data: 31 de Março de 2025</p>
+                <p class="fonte">Fonte: Jusbrasil</p>
+                <a href="blog/blog.html" target="_self"><button class="btn">Saber Mais</button></a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+      
+    
+  </main>
+
+  <footer> 
+    <!--SESSÃO DE INFORMAÇÕES EXTRAS E LINKS DE ACESSO-->
+   <div class="sessao-footer">
+    <div>
+           <div>
+            <img src="imagens/logo-azul.png" style="width: 80px; margin-bottom:15px;" alt="Logo Luís"><h3>Contato</h3>
+            <p style="margin-top: 10px;">Endereço: Av. Governador Jânio Quadros, 1337, sala 01 - Parque São Francisco - Ferra de Vasconcelos   </p>
+            <p>Email: juridicolcp2022@gmail.com <br> <a href="" target="_blank">Telefone:(11) 97458-8953 </a></p>
+            <div>
+                <a href="https://wa.link/krcvei" target="_blank"><input type="button" style="background-color: #123562; color: white; width: 150px;
+                height: 35px; margin: 20px 0px;" value="Nos contate" class="btn-contato"></a>
+            </div>
+           </div> 
+    </div>
+
+    <div> 
+        <h3>Links Úteis</h3>
+            <ul class="links-uteis">
+                <li><a href="#home" target="_self">Página Inicial</a></li>
+                <li><a href="#areas-atuacao" target="_self">Áreas de Atuação</a></li>
+                <li style="display: none;"><a href="#escritorio" target="_self">Escritório</a></li> 
+                <li><a href="#cv-advogado" target="_self">Sobre</a></li>
+                <li><a href="blog/blog.html" target="_self">Noticias</a></li>
+                <li> <a href="creditos.txt" download="creditos.txt">Baixar Arquivo com Créditos</a></li>
+            </ul>
+    </div> 
+    <div class="contato-form">
+    <h3>Entre em Contato</h3>
+    <form
+       action="https://formsubmit.co/josebotu@gmail.com"
+       method="POST"
+       class="form"
+       >
+       <label for="name">Nome</label>
+       <input type="text" name="name" id="name" required />
+       <label for="email">E-mail</label>
+       <input type="email" name="email" id="email" required />
+       <label for="message">Mensagem</label>
+       <textarea name="message" id="message" required></textarea>
+       <input type="hidden" name="_captcha" value="false" />
+       <input type="hidden" name="_next" value="http://127.0.0.1:5500/agradecimento/agradecimento.html">
+       
+       <button type="submit">Enviar</button>
+       </form>
+           </div>
+           </div>
+
+   </div>
+
+  
+
+   <span class="divisoria"></span>
+    <div style="text-align: center;">
+        &copy; 2024 Dr. Luís. Todos os direitos reservados. Desenvolvido por <a href="https://wa.link/28ukpj" target="_blank" style="color: rgb(149, 7, 161);">PulseCode</a>.
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
